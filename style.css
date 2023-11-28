@@ -30,7 +30,6 @@ header {
 
 .group {
     width: 100%;
-    height: 120rem;
     margin-top: 5rem;
     display: flex;
 }
@@ -143,7 +142,8 @@ section {
     align-items: center;
 }
 
-.non img, .two img  {
+.non img,
+.two img {
     position: absolute;
     top: 0;
 }
@@ -164,7 +164,7 @@ section {
     line-height: 1.625rem;
     border-radius: 1.8125rem;
     border: 1px solid rgba(135, 135, 157, 0.25);
-background: #FAFAFA;
+    background: #FAFAFA;
 }
 
 section img {
@@ -178,6 +178,7 @@ article {
     width: 34%;
     margin-left: 33%;
     text-align: center;
+    
 }
 
 article h2 {
@@ -205,16 +206,17 @@ article p {
     font-weight: 500;
     line-height: 1.625rem;
 }
-.two{
-        position: relative;
-            top: 2rem;
-            left: 49%;
-            display: flex;
-            width: 4rem;
-            height: 8.9rem;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+
+.two {
+    position: relative;
+    top: 2rem;
+    left: 49%;
+    display: flex;
+    width: 4rem;
+    height: 8.9rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -227,7 +229,7 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: -1;
-    background: linear-gradient(rgba(77, 150, 169, .8),rgba(77, 150, 169, .8)), url(assets/desktop/image-footer.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(77, 150, 169, .8), rgba(77, 150, 169, .8)), url(assets/desktop/image-footer.jpg) center/cover no-repeat;
 }
 
 
@@ -264,5 +266,57 @@ footer {
 
 .foot span {
     color: #D9B8FF;
+}
+
+
+@media (min-width: 768px) and (max-width: 885px) {
+
+    .group{
+        background-image: url(/assets/tablet/image-hero.png);
+        background-repeat: no-repeat;
+        background-size: 100% 18.9375rem;
+    }
+    .group img{
+        display: none;
+    }
+
+    .group-chat{
+        top: 20rem;
+        left: 0;
+        width: 100%;
+    }
+
+    .group-chat p{
+width: 28.5625rem;  
+  }
+
+  .non{
+    top: 23rem;
+  }
+
+  section{
+    margin-top: 30rem;
+    width: 70%;
+    margin-left: 7%;
+  }
+
+  section img{
+    width: 10rem;
+        height: 11rem;
+  }
+
+  article{
+    background-color: red;
+width: 35rem;
+ margin-left: 14%;
+ 
+ }
+ article h1{
+margin-left: 2rem;
+ }
 
 }
+
+
+
+@media (min-width: 360px) and (max-width: 430px) {}
